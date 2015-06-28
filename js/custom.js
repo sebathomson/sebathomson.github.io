@@ -78,7 +78,8 @@ $(document).scroll(function(){
 		if(index==0){	
 			
 			$('.chart').easyPieChart({
-				easing: 'easeOutBounce',
+                easing: 'easeOutBounce',
+				barColor: '#74C7D5',
 				onStep: function(from, to, percent) {
 					$(this.el).find('.percent').text(Math.round(percent));
 				}
