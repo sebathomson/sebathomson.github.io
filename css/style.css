@@ -1812,7 +1812,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	padding: 0 15px 15px 15px;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
-	opacity: 0;
+	opacity: 1;
 	-webkit-transition: all 0.3s ease-in-out;
 	        transition: all 0.3s ease-in-out;
 }
@@ -1835,7 +1835,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 /* ITEM DETAILS */
 .item-product {
-	width: 70%;
+	width: 100%;
 	float: left;
 }
 .item-product-price {
@@ -1878,13 +1878,24 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 .item-add-content {
 	font-weight: 400;
 	color: #808080;
+	background-color: #fff;
 }
 .item-add-content .section {
-	margin-bottom: 10px;
+	margin-bottom: -10px;
 }
 .item-add-content .section:last-of-type {
 	margin-bottom: 0;
 }
 .item-add-content p {
-	font-size: 14PX;
+	font-size: 14px;
+}
+.btn-visit {
+	background-color: #74C7D5;
+	color: #ffffff;
+	border-color: #74C7D5;
+}
+.btn-visit:hover {
+	background-color: #ffffff;
+	color: #74C7D5;
+	border-color: #ffffff;
 }
