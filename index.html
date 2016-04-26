@@ -24,6 +24,7 @@
 	<noscript>
 		<link rel="stylesheet" type="text/css" href="css/fallback.css" />
 	</noscript>
+
 	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/fallback.css" /><![endif]-->
 </head>
 <body>
@@ -745,8 +746,6 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.gridrotator.min.js"></script>
-	<!--for custom jquary-->
-	<script type="text/javascript" src="js/custom.js"></script>
 	<!--for placeholder jquary-->
 	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
 	<!--for menu jquary-->
@@ -795,21 +794,25 @@
 	<!--for skill chat jquary-->
 	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
-	<!--contact form js-->
+	<!--for custom jquary-->
+	<script type="text/javascript" src="js/custom.js"></script>
+
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
 			$("[data-toggle='collapse']").on("click",function(a){a.preventDefault();var b=$('.v-icon[data-target="'+$(this).attr("data-target")+'"]'),c=$(b).children("i");/fa-minus/i.test($(c).attr("class"))?$(c).removeClass("fa-minus").addClass("fa-plus"):$(c).removeClass("fa-plus").addClass("fa-minus")})
 		});
 	</script>
 
-	<script type='text/javascript'>
-		(function(d) {
-			var po = d.createElement('script');
-			po.type = 'text/javascript'; po.async = true; po.src = '//static.flnwdgt.com/build/js/hireme-sdk.js';
-			var s = d.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(po, s);
-		})(document);
-	</script>
+	<script type='text/javascript' src="//static.flnwdgt.com/build/js/hireme-sdk.js"></script>
 
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-37427122-2', 'auto');
+		ga('send', 'pageview');
+	</script>
 </body>
 </html>
